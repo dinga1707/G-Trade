@@ -1,0 +1,27 @@
+{
+  "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+  "telegram_allowed_chat_ids": [
+    123456789
+  ],
+  "dhan_accounts": [
+    {
+      "name": "master",
+      "client_id": "DHAN_CLIENT_ID_MASTER",
+      "access_token": "DHAN_ACCESS_TOKEN_MASTER",
+      "is_master": true,
+      "enabled_for_trading": true,
+      "multiplier": 1
+    },
+    {
+      "name": "alt1",
+      "client_id": "DHAN_CLIENT_ID_ALT1",
+      "access_token": "DHAN_ACCESS_TOKEN_ALT1",
+      "is_master": false,
+      "enabled_for_trading": true,
+      "multiplier": 2
+    }
+  ],
+  "base_quantity": 25,
+  "price_poll_interval_ms": 500,
+  "instruments_csv_path": "instruments.csv"
+}
